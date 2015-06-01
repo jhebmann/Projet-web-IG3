@@ -1,0 +1,270 @@
+body {
+	background-image: url(ricepaper-black.jpg);
+	background-attachment: fixed;
+	color: white;
+}
+
+#red{
+	color: red;
+}
+
+#center{
+	text-align: center;
+}
+
+input{
+	color: black;
+}
+
+#lignetrans{
+	border: 0px;
+}
+
+@font-face {
+	font-family: "Police titre";
+	src: url("SkyrimFont.ttf");
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Police titre", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+}
+
+h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Police titre", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+}
+
+h3{
+	text-align: center;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+table{
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	border-collapse: initial;
+	border-top: 1px transparent;
+	border-right: 1px transparent;
+}
+
+th, td{
+	text-align: center;
+	width: 200px;
+	border-color: white;
+}
+
+#surligne{
+	background-color: #580000 ;
+}
+
+#entete{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 40px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+th a, td a{
+	color: white;
+}
+
+th a:hover, td a:hover{
+	color: black;
+	background: white;
+}
+
+#boss{
+	color: lightblue;
+	border-color: white;
+}
+
+#dlc{
+	color: lightgreen;
+}
+
+a button{
+	color: black;
+}
+
+/*Menu Enemies*/
+
+#menuhor1, #menuitems, #menuweapons, #menuordweaps, #menumelweaps, #menumelweaps2, #menumelweaps3{
+	text-align: center;
+}
+ 
+#menuhor1 ul, #menuitems ul , #menuweapons ul, #menuordweaps ul, #menumelweaps ul, #menumelweaps2 ul, #menumelweaps3 ul{
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	background: black;
+	font-family: Arial, Helvetica, sans-serif;
+	/*width: 360px;*/
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+#menuhor1 ul:before , #menuitems ul:before, #menuweapons ul:before, #menuordweaps ul:before, #menumelweaps ul:before, #menumelweaps2 ul:before, #menumelweaps3 ul:before{
+	content: '';
+	display: block;
+}
+#menuhor1 ul:after , #menuitems ul:after, #menuweapons ul:after, #menuordweaps ul:after, #menumelweaps ul:after, #menumelweaps2 ul:after, #menumelweaps3 ul:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+#menuhor1 li , #menuitems li, #menuweapons li, #menuordweaps li, #menumelweaps li, #menumelweaps2 li, #menumelweaps3 li{
+	display: block;
+	float: center;
+	margin: 0 auto;
+	padding: 0;
+}
+#menuhor1 li a, #menuitems li a , #menuweapons li a, #menuordweaps li a, #menumelweaps li a, #menumelweaps2 li a, #menumelweaps3 li a{
+	width: 120px;
+	display: block;
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 14px;
+	text-transform: uppercase;
+}
+#menumelweaps li a, #menumelweaps2 li a, #menumelweaps3 li a{
+	width: 180px;
+}
+#menuhor1 ul li:first-child > a , #menuitems ul li:first-child >a, #menuweapons ul li:first-child > a, #menuordweaps ul li:first-child >a, #menumelweaps ul li:first-child > a, #menumelweaps2 ul li:first-child > a, #menumelweaps3 ul li:first-child > a{
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+#menuhor1 ul li:last-child > a , #menuitems ul li:last-child > a, #menuweapons ul li:last-child > a, #menuordweaps ul li:last-child > a, #menumelweaps ul li:last-child > a, #menumelweaps2 ul li:last-child > a, #menumelweaps3 ul li:last-child > a{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#menuhor1 li a:hover, #menuhor1 li a:active , #menuitems li a:hover, #menuitems li a:active, #menuweapons li a:hover, #menuweapons li a:active, #menuordweaps li a:active, #menuordweaps li a:hover, #menumelweaps li a:active, #menumelweaps li a:hover, #menumelweaps2 li a:active, #menumelweaps2 li a:hover, #menumelweaps3 li a:active, #menumelweaps3 li a:hover{
+	color: black;
+	background-color: white;
+}
+ 
+/*Menu*/
+
+#menu{
+	position: absolute;
+	z-index: 100;
+}
+
+#menu > ul {
+/*On supprime les effets de base*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	position: relative;
+	width: 170px;
+}
+
+/* Les blocs qui contiennent le texte*/
+#menu > ul li {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Les zones de texte*/
+#menu > ul li a {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 14px 14px;
+
+	font-family: Helvetica, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	background: black;
+}
+
+/* Coins du haut arrondis pour les premiers de liste */
+#menu > ul li:first-child > a {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+/* Coins du bas arrondis pour les derniers de liste */
+#menu > ul li:last-child > a {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+/* Changement de couleur au survol de la souris */
+#menu > ul li a:hover, #menu > ul li a:active,
+#menu > ul li:hover > a , #menu > ul li:active > a {
+	color: black;
+	background: white;
+}
+
+/* La flèche */
+#menu > ul .parent > a::after {
+	content: "";
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	width: 0px;
+	height: 0px;
+
+	border: 4px solid transparent;
+	border-left: 4px solid #FE2E2E;
+}
+
+/* Changement de couleur de la flèche au survol de souris */
+#menu > ul li > a:hover::after, #menu > ul li > a:active::after,
+#menu > ul li:hover > a::after, #menu > ul li:active > a::after {
+	border-left: 4px solid #2E2EFE;
+}
+
+/* Sous-menus */
+#menu > ul ul {
+	position: absolute;
+	left: 100%;
+	top: -99999px; /* On fait disparaitre le sous-menu tant qu'on ne clique pas dessus*/
+	padding-left: 3px;
+	opacity: 0; /*On rend le sous-menu invisible pour gérer la transition*/
+	width: 170px;
+  
+  /* La transition */
+	-webkit-transition: opacity 0.2s ease-in;
+	-moz-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+
+/*Taille des sous-menus*/
+#menu > ul ul li a {
+	font-size: 12px;
+}
+
+/* Apparition du sous-menu quand on passe sur le menu parent */
+#menu > ul li:hover > ul, #menu > ul li:active > ul {
+	top: 0px;
+	opacity: 1;
+}
